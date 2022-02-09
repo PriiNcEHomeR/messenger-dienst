@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "whatsupp-5b9d1": {
+      "hosting": {
+        "app": [
+          "whatsupp-5b9d1"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "whatsupp-5b9d1"
+  }
+}

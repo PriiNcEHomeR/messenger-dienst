@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Auth, createUserWithEmailAndPassword } from '@angular/fire/auth';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor(private auth:Auth) {
+    createUserWithEmailAndPassword(auth, "schmidt.thomas@hotmail.com","123456")
+  }
 
 }

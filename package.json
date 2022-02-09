@@ -9,12 +9,15 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "emulator": "firebase emulators:start --export-on-exit emulators",
+    "emulator-with-dumb": "firebase emulators:start --import emulators --export-on-exit emulator"
   },
   "private": true,
   "dependencies": {
     "@angular/common": "~13.1.1",
     "@angular/core": "~13.1.1",
+    "@angular/fire": "^7.2.0",
     "@angular/forms": "~13.1.1",
     "@angular/platform-browser": "~13.1.1",
     "@angular/platform-browser-dynamic": "~13.1.1",
@@ -31,9 +34,11 @@
     "@capacitor/storage": "^1.2.3",
     "@ionic/angular": "^5.5.2",
     "@ionic/pwa-elements": "^3.1.0",
+    "firebase": "^9.6.6",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "rxfire": "^6.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^13.1.2",
